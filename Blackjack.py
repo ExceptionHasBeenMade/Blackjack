@@ -7,7 +7,7 @@ while True:
     player = []
     for number in range(13):
         for color in colorList:
-            if(int(number) > 8):
+            if(number > 8):
                 if(number == 9):
                     figure = "Jack"
                 elif(number == 10):
@@ -29,13 +29,20 @@ while True:
         continue
     cards.remove(player[0])
     cards.remove(player[1])
-    print("Croupier's cards:")
-    print(croupier[0])
-    print("")
-    print("Your's cards:")
-    print(player[0])
-    print(player[1])
-    input()
+    while True:
+        print("Croupier's cards:")
+        print(croupier[0])
+        print("")
+        print("Your's cards:")
+        print(player[0])
+        print(player[1])
+        print("")
+        decision = input("What do you want to do(Hit/Stand): ")
+        decision = decision.lower()
+        if(decision == "hit" or decision == "h"):
+            pass
+        elif(decision == "stand" or decision == "s"):
+            pass
 
 
 # test_list = [11, 44, 55, 22, 77]
