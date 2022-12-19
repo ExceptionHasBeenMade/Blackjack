@@ -1,5 +1,5 @@
 import random
-colorList = ["♠", "♥️", "♣️", "♦️"]
+colorList = ["♠️", "♥️", "♣️", "♦️"]
 cards = []
 
 while True:
@@ -43,9 +43,3 @@ while True:
             pass
         elif(decision == "stand" or decision == "s"):
             pass
-
-
-# test_list = [11, 44, 55, 22, 77]
-# print("Original list is : " + str(test_list))
-#  
-# print("Random element is :", random.choices(test_list, k=4))
